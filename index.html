@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Izin Khusus BK</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background-color: #fff;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 12px 0 6px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Formulir Izin Khusus BK</h2>
+    <form>
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="kelas">Kelas</label>
+      <input type="text" id="kelas" name="kelas" required />
+
+      <label for="jenis">Jenis Permohonan</label>
+      <select id="jenis" name="jenis">
+        <option value="">-- Pilih Jenis --</option>
+        <option value="konseling">Konseling Pribadi</option>
+        <option value="izin_tidak_masuk">Izin Tidak Masuk</option>
+        <option value="masalah_keluarga">Masalah Keluarga</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="alasan">Alasan Izin</label>
+      <textarea id="alasan" name="alasan" rows="4" required></textarea>
+
+      <label for="tanggal">Tanggal Permohonan</label>
+      <input type="date" id="tanggal" name="tanggal" required />
+
+      <label for="lampiran">File Pendukung (opsional)</label>
+      <input type="file" id="lampiran" name="lampiran" />
+
+      <button type="submit">Kirim Permohonan</button>
+    </form>
+  </div>
+</body>
+</html>
